@@ -5,4 +5,7 @@
     <!-- (badgeClick) listens to child's @Output event -->
     <gov-classification-badge [level]="classificationLevel" (badgeClick)="handleBadgeClick($event)">
     </gov-classification-badge>
+    <div>
+        <button (click)="toggleClassification()">Change Clearance</button>
+    </div>
 </div>

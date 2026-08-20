@@ -15,4 +15,12 @@ export class DynamicFormBuilderComponent {
     handleBadgeClick(level: string): void {
         alert(`Accessing high-security partition for: ${level}`)
     }
+
+    toggleClassification(): void {
+        if (this.classificationLevel === 'SECRET') {
+            this.classificationLevel = 'TOP SECRET'
+        } else {
+            this.classificationLevel = 'SECRET'
+        }
+    }
 }
